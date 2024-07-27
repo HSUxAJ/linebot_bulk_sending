@@ -22,9 +22,6 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
-# from .mention import Mention
-# from .mentionee import Mentionee
-
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, FollowEvent, SourceGroup
@@ -34,8 +31,6 @@ import json
 import random
 import string
 import re
-
-from openpyxl import load_workbook
 
 # load_dotenv()
 channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
