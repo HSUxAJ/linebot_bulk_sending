@@ -1,7 +1,7 @@
 import os
 import sys
 from argparse import ArgumentParser
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 import asyncio
 import aiohttp
@@ -29,12 +29,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, FollowEvent, SourceGroup
 
-import multiprocessing
-import requests
 import json
-
-from apscheduler.schedulers.background import BackgroundScheduler
-from datetime import datetime, timedelta
 
 import random
 import string
@@ -59,7 +54,6 @@ class Handler:
         self.parser = parser
         with open('data.json', 'r', encoding='utf-8') as f:
             self.data = json.load(f)
-        self.scheduler = BackgroundScheduler()
         self.friend_list = self.get_friend()
         
     async def callback(self, request):
@@ -305,8 +299,6 @@ async def main(port=8080):
     await runner.setup()
     site = TCPSite(runner=runner, port=port)
     await site.start()
-
-    handler.scheduler.start()
 
     while True:
         await asyncio.sleep(3600)  # sleep forever
