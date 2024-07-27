@@ -3,12 +3,8 @@ asyncio
 aiohttp
 aiohttp
 logging
-linebot
-linebot.aiohttp_async_http_client
-linebot.exceptions
-linebot.models
+line-bot-sdk
 json
-apscheduler.schedulers.background
 datetime
 random
 string
