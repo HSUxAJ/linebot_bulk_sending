@@ -42,7 +42,7 @@ import re
 
 from openpyxl import load_workbook
 
-load_dotenv()
+# load_dotenv()
 channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
 channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
 if channel_secret is None:
