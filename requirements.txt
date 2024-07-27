@@ -5,3 +5,4 @@ aiohttp
 logging
 line-bot-sdk
 datetime
+gunicorn
