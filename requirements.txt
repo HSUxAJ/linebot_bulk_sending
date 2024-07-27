@@ -5,6 +5,5 @@ aiohttp
 logging
 line-bot-sdk
 datetime
-random
 string
 re
