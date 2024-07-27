@@ -5,5 +5,3 @@ aiohttp
 logging
 line-bot-sdk
 datetime
-string
-re
