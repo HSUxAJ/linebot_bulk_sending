@@ -1,8 +1,5 @@
+aiohttp==3.10.1
+line-bot-sdk==2.1.0
 argparse
 asyncio
-aiohttp
-aiohttp
 logging
-line-bot-sdk
-datetime
-gunicorn
